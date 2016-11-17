@@ -1,0 +1,47 @@
+0.  BMP: over 4 billion
+    JPEG: 16 million
+    PNG: 16 million
+    GIF: 256
+    
+1.  GIF supports animation
+
+2.  Lossless compression allows the conversion and recovery of files between formats, hence has to maintain the bits while compression.
+    Lossy compression on the other hand, throws away some of the image data which prevents it from being recoverable.
+    
+3.  JPEG is lossy compressed and hence has least file size.
+
+4.  Technically, when a file is deleted from FAT filesystem, it erases the information from the address table but maintains the copy of file on the hard drive.
+
+5.  Using secure delete option will replace the file bits by 0 on the system and hence ensures it's not recoverable. 
+
+6.  Stdint.h is a header file that declares specified integer types as having a certain width.
+
+7.  It gives clarity on the way user intends to use the data. 
+
+8.  BYTE - 1 byte
+	DWORD - 4 bytes
+	LONG - 4 bytes
+	WORD - 2 bytes
+	
+9.  BM
+
+10. bfSize gives the byte-size of the bitmap file.
+	biSize gives the byte-size of the structure.
+	
+11. The bitmap is a top-down DIB (device-independent bitmap) with upper-left-corner origin.
+
+12. The biBitCount member of the BITMAPINFOHEADER structure determines the number of
+	bits that define each pixel and the maximum number of colors in the bitmap.
+	
+13. fopen returns NULL if it cannot create the output file to write to.
+
+14. Because it reads 1 RGB triple at a time (according to the comments).
+
+15. If the width is 3, padding is necessary since the scanline must be a multiple of 4.
+	3 pixels * 3 bytes per pixel gives 9 bytes and 3 bytes are added to bring the scanline to 12 bytes.
+	
+16. Skips over any padding and looks for the next pixel (RGB triple)
+
+17. This is an integer constant which specifies that the offset provided is relative to the current file position
+	
+18. um...teddy bear-type figure!
